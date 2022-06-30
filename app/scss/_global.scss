@@ -1,0 +1,35 @@
+.container{
+  max-width: 1305px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+body{
+  @extend %roboto-300;
+  font-size: 15px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.title{
+  @extend %bebas-700;
+  font-size: 120px;
+  line-height: 114px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  &__red{
+    color: #DE131E;
+  }
+}
+.button{
+  padding: 20px 65px;
+  background-color: #DE131E;
+  color: #fff;
+  text-transform: uppercase;
+  @extend %roboto-700;
+  border-radius: 10px;
+  border: 2px solid #DE131E;
+  transition: all .5s;
+  &:hover{
+    background-color: transparent;
+  }
+}
