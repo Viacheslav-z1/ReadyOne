@@ -9,7 +9,6 @@
   background-image: url('../images/top_bg.jpg');
   @extend %image;
   height: 100vh;
-
   &__container {
     display: flex;
     flex-direction: column;
@@ -148,7 +147,7 @@
     margin-bottom: 43px !important;
   }
 
-  &__title{
+  &__title {
     font-size: 80px;
     line-height: 91px;
     margin-bottom: 25px;
@@ -161,8 +160,9 @@
     margin: 0 auto;
     background-size: contain;
     background-repeat: no-repeat;
-    &:nth-child(2n+1){
-      .program__text{
+
+    &:nth-child(2n+1) {
+      .program__text {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -184,9 +184,7 @@
     display: none;
   }
 
-  &__text {
-
-  }
+  &__text {}
 
   &__name {
     margin-bottom: 17px;
@@ -196,7 +194,8 @@
     line-height: 31px;
     position: relative;
     text-transform: uppercase;
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
       bottom: 0;
@@ -208,20 +207,332 @@
   }
 
   &__descr {
-  font-size: 18px;
-  line-height: 27px;
-  color: rgba(255, 255, 255, 0.89);
-  max-width: 332px;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.89);
+    max-width: 332px;
   }
 
   &__button {
     display: inline-block;
   }
-  &__btn-box{
+
+  &__btn-box {
     display: flex;
     justify-content: center;
   }
 }
+
+
+
+.sport {
+  padding: 30px 0;
+  background-color: #060606;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+
+  &__title {
+    font-size: 80px;
+    line-height: 92px;
+    text-transform: uppercase;
+  }
+
+  &__descr {
+    max-width: 830px;
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__car {
+    @extend %image;
+    min-height: 998px;
+    position: relative;
+  }
+
+  &__car-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 998px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+
+  }
+
+  &__img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    align-items: center;
+    position: relative;
+    top: -150px;
+  }
+
+  &__img {
+    background-size: cover;
+    width: 250px;
+    height: 111px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__car-name {
+    @extend %roboto-700;
+    font-size: 28px;
+    line-height: 43px;
+    background-color: #BA111A;
+    border: 30px solid #060606;
+    width: 240px;
+    height: 230px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -90px;
+    z-index: 1;
+  }
+
+  &__car-bottom {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+  }
+
+  &__gradus-box {
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 7px;
+    padding-left: 10px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 23px;
+      height: 17px;
+      background-image: url('../images/arrow1.svg');
+      bottom: 0;
+      left: 0;
+      @extend %image;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 11px;
+      background-image: url('../images/arrow2.svg');
+      bottom: 10px;
+      right: 0;
+      @extend %image;
+    }
+  }
+
+  &__car-gradus {
+    font-size: 30px;
+    line-height: 35px;
+    @extend %bebas-700;
+    display: flex;
+
+    span {
+      font-size: 12px;
+      line-height: 14px;
+      margin-left: 5px;
+    }
+  }
+
+  &__car-model {
+    font-size: 100px;
+    line-height: 115px;
+    @extend %bebas-700;
+    padding-right: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 54px;
+      height: 71px;
+      background-image: url('../images/flag.png');
+      right: 0;
+      top: -10px;
+    }
+  }
+  &__galery {
+    position: relative;
+    top: -10px;
+    margin-bottom: 40px;
+  }
+    
+  &__galery-list {
+    display: flex;
+    overflow: auto;
+  }
+    
+  &__galery-li {
+    width: 320px;
+    height: 144px;
+  }
+    
+  &__galery-img {
+    width: 320px;
+  }
+
+  &__info {
+    padding-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+    
+  &__name-model {
+    font-size: 80px;
+    line-height: 91px;
+    span{
+      font-size: 45px;
+      line-height: 51px;
+    }
+  }
+    
+  &__info-list {
+    display: flex;
+    gap: 60px;
+  }
+    
+  &__info-li {
+
+  }
+    
+  &__info-name {
+    font-size: 18px;
+    line-height: 27px;
+  }
+    
+  &__info-descr {
+    color: rgba(255, 255, 255, 0.89);
+  }
+    
+  &__button-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+    
+  &__button {}
+    
+  &__description {
+    text-align: center;
+    @extend %roboto-700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+.present {
+  padding: 40px 0;
+  background-color: #060606;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  &__content {
+    max-width: 730px;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 70px;
+    line-height: 85px;
+    margin-bottom: 15px;
+  }
+
+  &__descr {
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 5px;
+    padding: 7px 22px 7px 46px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 75px;
+    &::before{
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      @extend %image;
+      background-image: url('../images/present_small.png');
+    }
+  }
+
+  &__list {
+    margin-bottom: 75px;
+  }
+
+  &__item {
+    padding-left: 40px;
+    @extend %roboto-400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 35px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 15px;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      @extend %image;
+      background-image: url('../images/green-arrow.svg');
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__btn {}
+
+  &__btn-transparent {
+    background-color: transparent;
+    border: 2px solid #707070;
+    border-radius: 10px;
+    &:hover{
+      border: 2px solid #DE131E;
+      color: #DE121E;
+    }
+  }
+
+  &__img-box {
+    max-width: 594px;
+    width: 100%;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+}
+
 
 
 
